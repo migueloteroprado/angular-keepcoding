@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Saludo / Referencias</h4>
+    </div>
+    <div class="card-body">
+        <p class="card-text">Text</p>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="text" #nombre class="form-control"  placeholder="Nombre">
+        </div>
+        <button *ngIf="nombre.value.length > 0" class="btn btn-danger" (click)="nombre.value = ''">Borrar</button>
+        <button class="btn btn-warning" (click)="nombre.value = nombre.value">Saludar</button>
+    </div>
+    <div class="card-footer text-muted">
+      <p class="card-text">Hola, {{ nombre.value }}</p>
+    </div>
+  </div>

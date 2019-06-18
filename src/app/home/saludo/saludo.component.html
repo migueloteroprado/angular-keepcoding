@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">Saludo</h4>
+  </div>
+  <div class="card-body">
+      <p class="card-text">Text</p>
+      <div class="form-group">
+        <label for=""></label>
+        <input type="text" [(ngModel)]="usuario.nombre" class="form-control" name="" id="" placeholder="Texto">
+      </div>
+      <button id="borrar" (click)="btnBorrar($event)">Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p class="card-text">Hola, {{ usuario.nombre }}</p>
+  </div>
+</div>
