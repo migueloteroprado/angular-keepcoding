@@ -44,6 +44,11 @@ export class FormVdComponent implements OnInit {
     }*/
   }
 
+  btnBorrar() {
+    this.contacto.aficiones = [];
+    this.contacto.sector = null;
+  }
+
   enviar() {
     console.log('Datos enviados');
   }
